@@ -1,0 +1,31 @@
+/* @import "tailwindcss"; */
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #f7f0e4;
+  --color-gold: #b8964f;
+  --color-brown: #1c130c;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Jost", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-brown text-cream font-sans;
+  margin: 0;
+    overflow-x: clip;
+
+}
+@theme {
+  --color-cream: #f7f0e4;
+  --color-ivory: #fffdf8;
+  --color-sand: #f3ebdf;
+  --color-gold: #b8964f;
+  --color-brown: #1c130c;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Jost", sans-serif;
+  --font-script: "Pinyon Script", cursive;
+}
