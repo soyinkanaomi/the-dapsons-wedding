@@ -3,6 +3,7 @@ export const WEDDING = {
   end: new Date("2026-11-14T17:00:00+01:00"),
   timeLabel: "Three o'clock, Lagos",
 };
+
 const fmt = (opts: Intl.DateTimeFormatOptions) =>
   new Intl.DateTimeFormat("en-GB", {
     timeZone: "Africa/Lagos",
@@ -17,3 +18,9 @@ export const toCalendar = (d: Date) =>
   d.toISOString().replace(/[-:]|\.\d{3}/g, "");
 export const afterStart = (hours: number) =>
   new Date(WEDDING.start.getTime() + hours * 3_600_000);
+
+const isoDay = new Intl.DateTimeFormat("en-CA", {
+  timeZone: "Africa/Lagos",
+}).format(WEDDING.start);
+
+export const dayStart = new Date(`${isoDay}T00:00:00+01:00`);
