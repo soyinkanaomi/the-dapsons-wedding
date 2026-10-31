@@ -4,7 +4,7 @@ import Reveal from "./Reveal";
 const bank = {
   bankName: "Moniepoint Bank",
   accountName: "Soyink Naomi Blessing", 
-  accountNumber: "5989097729",
+  accountNumber: "591234500",
 };
 
 const cardClass =
